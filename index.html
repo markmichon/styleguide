@@ -7,13 +7,14 @@
   <meta name="description" content="">
   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
   <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <div id="sidebar">
     
   </div>
-  <div role="main">
+  <div role="main" id="content">
     <article>
 
       <h1>Style Guide</h1>
@@ -30,7 +31,31 @@
       <p>The above is an <code>h5</code> element. It should be used as the first subheading below <code>h4</code>.</p>
       <h6>Sixth-level Heading</h6>
       <p>The above is an <code>h6</code> element. It should be used as the first subheading below <code>h5</code>.</p>
+    
+      <h2>Groupings Content</h2>
+      <h3>Paragraphs</h3>
+      <p>All paragraphs are wrapped in <code>p</code> tags. <code>p</code> elements can also be wrapped in a <code>blockquote</code> element assuming the paragraph is also a quote.</p>
+
+      <h3>Blockquotes</h3>
+      <blockquote cite="url goes here">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed.</p>
+      </blockquote>
+      <p>Here is where you <cite><a href="#" title="text">link to</a></cite> the source</p>
+
+      <h3>Ordered List</h3>
+      <p>The <code>ol</code> element denotes an ordered list.</p>
+      <ol>
+        <li>This is the first element in an ordered list</li>
+        <li>This is the second element</li>
+          <ol>
+            <li>This is a sub element</li>
+            <li>This is a second sub element</li>
+          </ol>
+        <li>This is the third element</li>
+      </ol>      
     </article>
+
+
   </div>
   <footer>
 
