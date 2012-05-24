@@ -15,21 +15,34 @@
 
 // 2. Color
 
-@baseColor: #222;
-@altColor: #888;
+@basecolor: #4d4d4d;
+@altColor: #444;
 @altFontColor: maroon;
+@light-blue: #3986f2;
+@light-grey: #efefef;
+@light-green: #87F23A;
+@black: #111;
 
 // CSS reset
 @import "reset.less";
 
 // Basics
 html {
-	color: @baseColor;
+	color: @basecolor;
 	font-family: @basefont;
 	font-size: @basefontsize;
 	line-height: @baselineheight;
 }
 
+body {height:auto; margin:0;padding:0;}
+a {
+	text-decoration: none;
+	border-bottom: 1.5px solid #dadada;
+	color: @black;
+	&:hover {
+		color: @light-blue;
+	}
+}
 // Headings
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
@@ -39,14 +52,14 @@ h1,h2,h3,h4,h5,h6 {
 	color: @baseheadingfontcolor;
 	text-rendering: optimizelegibility; 
 }
-h2 {color:#3986f2;}
+h2 {color:@light-blue;}
 
-h1 {margin: @baselineheight / 2 0;font-size: 2em;}
-h2 {margin: @baselineheight / 2 0;font-size: 1.5em;}
-h3 {margin: @baselineheight / 1.5 0;font-size: 1.17em;}
-h4 {margin: @baselineheight / 1.25 0;font-size: 1em;}
-h5 {margin: @baselineheight 0;font-size: 0.83em;}
-h6 {margin: @baselineheight 0;font-size: 0.75em;}
+h1 {margin: @baselineheight / 2em 0;font-size: 2em;}
+h2 {margin: @baselineheight / 2em 0;font-size: 1.5em;}
+h3 {margin: @baselineheight / 1.5em 0;font-size: 1.17em;}
+h4 {margin: @baselineheight / 1.25em 0;font-size: 1em;}
+h5 {margin: @baselineheight / 1em 0;font-size: 0.83em;}
+h6 {margin: @baselineheight / 1em 0;font-size: 0.75em;}
 
 // Text Elements
 /* Text Elements */
@@ -63,19 +76,51 @@ blockquote {
 
 ol {
 	
-	list-style: outside
+	list-style-type: decimal;
+	list-style-position: inside;
+	li {
+		padding-left: 10px;
+	}
 }
 
 //Layout
 #content {
 	position: relative;
 	margin-left: 250px;
+	border-left: 1px solid @light-grey;
 	
 }
+
+article {margin: 0 2%;}
 #sidebar {
 	position: fixed;
 	float: left;
 	width: 250px;
 	height: 100%;
 	display: block;
+
+}
+
+#sidebar {
+	ul {
+		margin:10% 2em;
+		font: bold 1em/1.5 @basefont;
+		color: @altColor;
+		text-align: right;
+	}
+	li {
+		list-style-type: none;
+	}
+	a {
+		float:left;
+		display: block;
+		border:none;
+		width: 100%;
+		padding-left: 10px;
+		color: @basecolor;
+		
+		&:hover {
+			color: @light-blue;
+			}
+	}
 }

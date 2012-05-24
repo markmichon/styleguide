@@ -83,10 +83,23 @@ section {
   display: block;
 }
 html {
-  color: #222222;
+  color: #4d4d4d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1.5px solid #dadada;
+  color: #111111;
+}
+a:hover {
+  color: #3986f2;
 }
 /* Headings */
 h1,
@@ -105,27 +118,27 @@ h2 {
   color: #3986f2;
 }
 h1 {
-  margin: 0.75 0;
+  margin: 0.75em 0;
   font-size: 2em;
 }
 h2 {
-  margin: 0.75 0;
+  margin: 0.75em 0;
   font-size: 1.5em;
 }
 h3 {
-  margin: 1 0;
+  margin: 1em 0;
   font-size: 1.17em;
 }
 h4 {
-  margin: 1.2 0;
+  margin: 1.2em 0;
   font-size: 1em;
 }
 h5 {
-  margin: 1.5 0;
+  margin: 1.5em 0;
   font-size: 0.83em;
 }
 h6 {
-  margin: 1.5 0;
+  margin: 1.5em 0;
   font-size: 0.75em;
 }
 /* Text Elements */
@@ -146,11 +159,19 @@ blockquote {
   margin: 1.6em 0;
 }
 ol {
-  list-style: outside;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+ol li {
+  padding-left: 10px;
 }
 #content {
   position: relative;
   margin-left: 250px;
+  border-left: 1px solid #efefef;
+}
+article {
+  margin: 0 2%;
 }
 #sidebar {
   position: fixed;
@@ -158,4 +179,24 @@ ol {
   width: 250px;
   height: 100%;
   display: block;
+}
+#sidebar ul {
+  margin: 10% 2em;
+  font: bold 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444444;
+  text-align: right;
+}
+#sidebar li {
+  list-style-type: none;
+}
+#sidebar a {
+  float: left;
+  display: block;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  color: #4d4d4d;
+}
+#sidebar a:hover {
+  color: #3986f2;
 }
