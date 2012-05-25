@@ -167,12 +167,12 @@ ol li:before {
   content: counter(li) '.';
   counter-increment: li;
   margin-right: 1em;
-  font: bold 5em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
 }
 ol ol {
   list-style-type: lower-alpha;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 #content {
   position: relative;
