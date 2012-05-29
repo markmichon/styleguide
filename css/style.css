@@ -116,7 +116,7 @@ h4 {
   font-weight: bold;
   color: #222222;
   text-rendering: optimizelegibility;
-  text-shadow: 1px 0px 0px #ccc;
+  text-shadow: -1px 1px 1px #f9f9f9;
 }
 h1 {
   margin: 0.75em 0;
@@ -166,9 +166,10 @@ ol li {
 ol li:before {
   content: counter(li) '.';
   counter-increment: li;
-  margin-right: 1em;
-  font: bold 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: .75em;
+  font: 800 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
+  color: #3986f2;
 }
 ol ol {
   list-style-type: lower-alpha;

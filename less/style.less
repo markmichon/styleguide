@@ -2,6 +2,7 @@
 
 // 1. Typography
 @basefont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serif-font: Georgia, Times, "Times New Roman", serif;
 @basefontsize: 16px;
 @baselineheight: 1.5;
 @baseheadingfont: @basefont;
@@ -62,7 +63,8 @@ h1,h2,h3,h4 {
 	font-weight: @baseheadingfontweight;
 	color: @baseheadingfontcolor;
 	text-rendering: optimizelegibility; 
-	text-shadow: 1px 0px 0px #ccc;
+	text-shadow: -1px 1px 1px #f9f9f9;
+
 }
 
 h1 {margin: @baselineheight / 2em 0;font-size: 2em;}
@@ -96,9 +98,10 @@ ol {
 	&:before {
 		content:counter(li) + '.';
 		counter-increment: li;
-		margin-right: 1em;
-		font: bold 1em/1.5 @basefont;
+		margin-right: .75em;
+		font: 800 1em/1.5 @basefont;
 		text-align: left;
+		color: @light-blue;
 
 	}
 	}
@@ -128,7 +131,6 @@ article {margin: 0 2%;}
 	height: 100%;
 	display: block;
 	z-index: 0;
-
 }
 
 #sidebar {
