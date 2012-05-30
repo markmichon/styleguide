@@ -175,6 +175,32 @@ ol ol {
   list-style-type: lower-alpha;
   margin-left: 2em;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin-left: 2em;
+  list-style: disc;
+}
+ul ul {
+  margin-left: 2em;
+}
+dt {
+  font-weight: 600;
+}
+dd {
+  margin-left: 2em;
+}
+figure {
+  margin-bottom: 2em;
+}
+figure figcaption h4 {
+  margin-bottom: .5em;
+}
+figure figcaption p {
+  font-size: .8em;
+}
 #content {
   position: relative;
   z-index: 1;
