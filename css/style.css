@@ -201,6 +201,13 @@ figure figcaption h4 {
 figure figcaption p {
   font-size: .8em;
 }
+s {
+  color: #808080;
+}
+dfn {
+  color: #111111;
+  border-bottom: dotted 2px #efefef;
+}
 #content {
   position: relative;
   z-index: 1;
