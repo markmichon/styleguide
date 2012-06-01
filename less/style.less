@@ -149,6 +149,39 @@ dfn {
 	color: @black;
 	border-bottom: dotted 2px @light-grey;
 }
+
+//Forms
+form fieldset div {
+clear: both;
+overflow: hidden;
+}
+
+legend { margin: @baselineheight / 2em 0;font-size: 1.5em; font-weight:400}
+
+label, input {
+	margin:0;
+	float:left;
+}
+label {
+	clear: left;
+	width: 23.6%;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: baseline;
+}
+
+input {
+	width: 66%%;
+	height: 20px;
+}
+
+form {
+	em {
+		float:left;
+		clear:both;
+		margin-left: 23.6%;
+	}
+}
 //Layout
 #content {
 	position: relative;
