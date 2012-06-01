@@ -126,6 +126,7 @@ h2 {
   margin: 0.75em 0;
   font-size: 1.5em;
   font-weight: 400;
+  color: #3986f2;
 }
 h3 {
   margin: 1em 0;
@@ -208,7 +209,7 @@ dfn {
   color: #111111;
   border-bottom: dotted 2px #efefef;
 }
-form fieldset div {
+form div {
   clear: both;
   overflow: hidden;
 }
